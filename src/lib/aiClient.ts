@@ -12,13 +12,13 @@ const DEFAULT_AI_API_KEY =
 const DEFAULT_AI_BASE_URL = "https://api.apinex.bond/v1";
 
 export const ai = new OpenAI({
-  apiKey: process.env.AI_API_KEY ?? DEFAULT_AI_API_KEY,
-  baseURL: process.env.AI_BASE_URL ?? DEFAULT_AI_BASE_URL,
+  apiKey: process.env.AI_API_KEY || DEFAULT_AI_API_KEY,
+  baseURL: process.env.AI_BASE_URL || DEFAULT_AI_BASE_URL,
   timeout: 45_000,
   maxRetries: 1,
 });
 
-export const AI_MODEL = process.env.AI_MODEL ?? "free/gemini-3.8-flash";
+export const AI_MODEL = process.env.AI_MODEL || "free/gemini-3.8-flash";
 
 /**
  * Ordered models tried for every completion. If the free upstream for the
