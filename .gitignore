@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing / Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# WhatsApp session files (do not commit auth credentials)
+auth_sessions/
+auth_info_baileys/
+
+# Environment variables
+.env
+.env*.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pino.log
+
+# OS / Editor
+.DS_Store
+*.pem
+.vscode/
+.idea/
